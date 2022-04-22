@@ -1,7 +1,37 @@
 /* You're welcome to change any of this! */
-* {
-    box-sizing: border-box;
-}
+* 
+.container {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+       "p1 p1 p1"
+       "p2 p3 p4"; 
+ 
+
+    row-gap: 0px;
+     column-gap: 0px;
+ }
+
+ .header {
+     grid-area: p1;
+     background-color: #EDE7E3;
+ }
+
+ .tutorials {
+     grid-area: p2;
+     background-color: #16697A;
+ }
+
+ .homework {
+     grid-area: p3;
+     background-color: #489FB5;
+ }
+
+ .inspiration {
+     grid-area: p4;
+     background-color: #82C0CC;
+ }
 
 body {
     margin: 0px;
@@ -14,8 +44,3 @@ p, li {
     line-height: 1.5em;
 }
 
-#inspiration {
-    background-color: #F0F0F0;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
