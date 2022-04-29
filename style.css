@@ -80,14 +80,29 @@ a {
     letter-spacing: 0.05em;
 }
 
+
 .tutorial01 {
     justify-items: center;
     justify-self: stretch;
-   padding: 50px;
+   padding: 30px;
 }
 
 .tutorial02 {
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
 }
 
+.tutorial05-1 {
+    justify-content: center;
+    padding: 30px;
+}
+
+.tutorial05-2 {
+    justify-content: center;
+    padding: 30px;
+}
+
+.homework02 {
+    justify-content: center;
+    padding: 30px;
+}
