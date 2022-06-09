@@ -194,6 +194,7 @@ input, select, textarea {
 			margin: 0 0 1.3em 0;
 			position: relative;
 			padding-bottom: 0.35em;
+			text-shadow: 2px 2px rgba(174, 122, 196, 0.664);
 		}
 
 			h1.major:after {
@@ -3048,6 +3049,7 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			width: 50em;
+			flex: 1;
 			-ms-flex: 1;
 		}
 
@@ -3372,15 +3374,18 @@ input, select, textarea {
 		display: flex;
 		background-color: #5e42a6;
 		cursor: default;
-		padding: 1.75em 2em;
+		padding: 1.4em 1.9em;
 	}
 
 		#header > .title {
 			border: 0;
 			color: #ffffff;
 			display: block;
-			font-size: 1.25em;
+			font-size: 1.5em;
 			font-weight: bold;
+			letter-spacing: 0.1em;
+			text-shadow: 2px 1px rgb(11, 6, 12)
+		
 		}
 
 		#header > nav {
@@ -3930,4 +3935,79 @@ input, select, textarea {
 #intro  .inner  ul {
 	position: relative;
 	top: 200px;
+}
+
+.preview_box {
+    width: 100%;
+    height: 100%;
+}
+
+.featured_image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    cursor: pointer;	
+}
+
+.featured_image > img {
+	display: block;
+	position: relative;
+	bottom: 5vh;
+	width: 800px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0.3em 0.3em 8px 0 rgba(23, 20, 26, 0.2), 0.3em 0.3em 20px 0 rgba(23, 20, 26, 0.2);
+	object-fit: cover;
+	object-position: 0px 0px;
+}
+.next, .prev {
+	position: absolute;
+    color: white;
+    border-width: 0px;
+    font-size: 1.3em;
+    background: rgba(255,255,255,0.2);
+    border-radius: 60px;
+    width: 90px;
+    height: 60px;
+    padding-bottom: 5px;
+	line-height: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	letter-spacing: 0em;
+}
+.next:hover, .prev:hover {
+    background: rgba(255,255,255,0.4);
+}
+.prev {
+    top: 48vh;
+    left: 14vw;
+}
+.next {
+    top: 48vh;
+    right: 14vw;
+}
+
+.credits > h3 {
+	position: relative;
+	bottom: 2vh;
+	line-height: 0.9em;
+	letter-spacing: 1.7px;
+	text-align: center;
+	color: #e295c6;
+	font-size: 1.25em;
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	text-decoration-color:rgba(91, 83, 104, 0.9);
+	text-shadow: 1px 1px black;
+}
+
+.description {
+	font-style: italic;
+	color:rgba(217, 193, 231, 0.863);
+	font-size: 1em;
+};
+
+#main .inner {
+	background-color: #b74e91;
 }
