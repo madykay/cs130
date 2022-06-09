@@ -20,7 +20,7 @@ const showNext = (ev) => {
 
 const showPrev = (ev) => {
     if (currentIndex == 0) {
-        currentIndex = 8
+        currentIndex = 5
     };
     currentIndex -= 1;
     const elem = mulan[currentIndex];
